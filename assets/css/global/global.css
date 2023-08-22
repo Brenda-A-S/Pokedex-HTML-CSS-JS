@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: .2s;
+    border: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #141414;
+}
+
+a {
+    color: inherit;
+    display: block;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+    background-color: #f7f7f7;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f9c704;
+    border: 2px solid #f7f7f7;
+    border-radius: 10px;
+}

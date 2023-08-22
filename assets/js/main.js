@@ -1,17 +1,16 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
-const modalcontainer = document.getElementById('modal-container')
-const modal = document.getElementById('modal')
 
-const maxRecords = 15
-const limit = 10
+const maxRecords = 1000
+const limit = 20
 let offset = 0;
 
 function loadPokemonitens(offset, limit) {
     
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {        
         const newHtml = pokemons.map((pokemon) =>
-            `<li class="pokemon ${pokemon.type}">
+            `<li>
+            <a href="detalhes.html/${pokemon.number}" class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
             <div class="detail">
@@ -21,6 +20,7 @@ function loadPokemonitens(offset, limit) {
             <img src="${pokemon.photo}"
                 alt="${pokemon.name}"> 
             </div>
+            </a>
         </li> 
         `
         ).join('')
