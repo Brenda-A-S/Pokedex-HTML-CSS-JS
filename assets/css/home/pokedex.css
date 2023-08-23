@@ -13,7 +13,8 @@
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(2px 2px 3px #0000003a);
+    filter: drop-shadow(1px 1px 2px #00000009);
+    border: 1px solid #efefef;
     overflow: hidden;
 }
 
@@ -21,21 +22,25 @@
     content: '';
     background-image: url(../../imgs/favicon.png);
     position: absolute;
-    top: -40px;
-    left: 90px;
+    bottom: -120px;
+    left: 140px;
     width: 300px;
     height: 300px;
     background-repeat: no-repeat;
     background-size: contain;
     filter: grayscale(1);
-    opacity: 0.1;
+    opacity: 0.04;
+}
+
+.pokemon:hover {
+    transform: scale(1.01);
 }
 
 .pokemon .number {
     color: #000;
     opacity: .3;
     text-align: right;
-    font-size: .625rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -44,7 +49,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: capitalize;
-    filter: drop-shadow(2px 2px 5px #0000003a);
+    color: #fff;
 }
 
 .pokemon .detail .types {
@@ -58,9 +63,9 @@
     font-size: .8rem;
     padding: .25rem 1rem;
     margin: .25rem 0;
-    filter: brightness(1.1);
     text-align: left;
-    text-transform: lowercase;
+    text-transform: capitalize;
+    background-color: #fff;
 }
 
 .pokemon .detail {

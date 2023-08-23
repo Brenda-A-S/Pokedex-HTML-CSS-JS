@@ -10,7 +10,8 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    background-color: #fffdf7;
     color: #141414;
 }
 
@@ -21,11 +22,19 @@ a {
 
 body::-webkit-scrollbar {
     width: 11px;
-    background-color: #f7f7f7;
+    background-color: #fff;
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: #f9c704;
-    border: 2px solid #f7f7f7;
+    border: 2px solid #fff;
     border-radius: 10px;
+}
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
