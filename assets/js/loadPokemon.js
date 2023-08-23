@@ -43,12 +43,12 @@ function toLoadPokemon(url) {
                         <h2>Estatísticas</h2>
                         <section class="stats">
                             ${pokemon.stats.map((stat) => `
-                            <div class="${stat.stat.name}">
+                            <div class="stat ${stat.stat.name}">
                                 <h3>
                                     ${stat.stat.name}
                                 </h3> 
                                 <div class="progress">
-                                <span>${stat.base_stat}%</span>
+                                    <span>${stat.base_stat}</span>
                                     <progress value="${stat.base_stat}" max="100"></progress>
                                 </div>
                                     
