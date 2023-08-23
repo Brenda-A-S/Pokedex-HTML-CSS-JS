@@ -11,8 +11,8 @@
 
 body {
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
-    background-color: #1b1b1b;
-    color: #f7f7f7;
+    background-color: #f7f7f7;
+    color: #141414;
 }
 
 a {
@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #5a5a5a;
+    background-color: #141414;
     border: 2px solid #fff;
     border-radius: 10px;
 }

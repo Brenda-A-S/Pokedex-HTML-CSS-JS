@@ -10,9 +10,9 @@ function loadPokemonitens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {        
         const newHtml = pokemons.map((pokemon) =>
             `<li>
-            <a href="details.html?id=${pokemon.number}" class="pokemon ${pokemon.type}">
+            <a href="details.html?id=${pokemon.number}" class="pokemon">
             <span class="number">#${pokemon.number}</span>
-            <span class="name">${pokemon.name}</span>
+            <h2 class="name">${pokemon.name}</h2>
             <div class="detail">
                 <ol class="types">
                         ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}

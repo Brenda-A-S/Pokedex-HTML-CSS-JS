@@ -1,0 +1,20 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer h3 {
+    font-size: .8rem;
+}
+
+.footer h3 a {
+    display: inline-block;
+    text-decoration: underline;
+}
+.footer h3 a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+}

@@ -13,14 +13,14 @@
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(1px 1px 2px #00000009);
-    border: 1px solid #2e2e2e;
+    background: #fff;
     overflow: hidden;
+    position: relative;
 }
 
 .pokemon::before {
     content: '';
-    background-image: url(../../imgs/favicon.png);
+    background: url(../../imgs/header/pokeball.svg) no-repeat bottom right / 232px 232px;
     position: absolute;
     bottom: -120px;
     left: 140px;
@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     filter: grayscale(1);
-    opacity: 0.04;
+    opacity:.1;
 }
 
 .pokemon:hover {
@@ -49,7 +49,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: capitalize;
-    color: #fff;
+    color: #141414;
 }
 
 .pokemon .detail .types {
@@ -65,7 +65,8 @@
     margin: .25rem 0;
     text-align: left;
     text-transform: capitalize;
-    background-color: #fff;
+    color: #141414;
+    font-weight: 500;
 }
 
 .pokemon .detail {

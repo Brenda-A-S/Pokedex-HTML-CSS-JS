@@ -1,5 +1,5 @@
 .header-bg {
-    background-color: #161616;
+    background: linear-gradient(90deg, rgba(240,240,240,1) 17%, rgba(255,255,255,1) 56%);
 }
 
 .header {
@@ -15,8 +15,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    color: #f7f7f7;
-    transition: all .5s;
+    gap: 20px;
+    color: #141414;
+    transition: all .2s;
 }
 
 .header-menu a {
@@ -27,14 +28,19 @@
     padding: 12px 12px;
     font-weight: 500;
     border-radius: 30px;
-    transition: transform 1s;
+    transition: all .2s;
     position: relative;
     font-weight: 600;
 }
 
 .header-menu a:hover {
     background-color: #2e2e2e;
+    color: #f7f7f7;
     transform: translateY(-2px);
+}
+
+.header-menu a:hover svg {
+    fill: #f7f7f7;
 }
 
 @media(max-width: 800px) {
