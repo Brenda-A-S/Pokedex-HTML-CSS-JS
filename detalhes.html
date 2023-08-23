@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokedex | BY BRENDA-A-S</title>
+
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="content">
+        <div class="logo"><img src="assets/imgs/pokemon-logo.png" alt=""></div>
+
+        <ol id="pokemonList" class="pokemons">
+        </ol>
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Load more
+            </button>
+        </div>
+    </section>
+
+    <script src="assets/js/loadPokemon.js"></script>
+    <script src="assets/js/pokemon-model.js"></script>
+    <script src="assets/js/poke-api.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
