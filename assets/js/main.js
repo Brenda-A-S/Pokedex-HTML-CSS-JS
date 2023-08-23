@@ -11,8 +11,8 @@ function loadPokemonitens(offset, limit) {
         const newHtml = pokemons.map((pokemon) =>
             `<li>
                 <a href="details.html?id=${pokemon.id}" class="pokemon">
+                <span class="number">#${pokemon.number}</span>
                     <h2 class="name">${pokemon.name}</h2>
-                    <span class="number">#${pokemon.number}</span>
                     <div class="detail">
                         <ol class="types">
                             ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
