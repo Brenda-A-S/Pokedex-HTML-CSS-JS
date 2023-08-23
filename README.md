@@ -1,6 +1,6 @@
 # 📁 Projeto Pokedex Desafio DIO
 
-Projeto de uma Pokedex, utilizando de recursos da API [`pokeapi.co`](https://pokeapi.co/) com requisições feitas através de `fetch API`. Esse projeto foi desenvolvido em um dos módulos da Formação JavaScript Developer da DIO.
+Projeto de uma Pokedex, utilizando de recursos da API [`pokeapi.co`](https://pokeapi.co/) com requisições feitas através de `fetch API`. Esse projeto foi desenvolvido e evoluído por mim, durante a Formação JavaScript Developer da DIO.
 
 # 📌 Linguagens Utilizadas
 
@@ -18,6 +18,15 @@ Foram utilizados os seguintes recursos:
 * `join()` - Para concatenar elementos da lista e retornar uma nova string.
 * `normalize CSS` - Para padronizar a visualização do estilo em diferentes navegadores.
 * `mobile firts` - Desenvolvimento primeiramente para dispositivos móveis e depois adaptados para Desktop.
+
+# Funcionalidades adicionadas por mim
+* Página com detalhamento individual do Pokemon
+* Formatação do número no modelo #000
+* Estilização diferente da sugerida no curso
+* Adição de Links úteis
+* Adição de header com menu nav e footer fixo
+* Animações e estilos ao :hover
+* Alteração na paleta de cores dos tipos de Pokemon
 
  # :open_file_folder: O resultado
  :star: :star: :star:
