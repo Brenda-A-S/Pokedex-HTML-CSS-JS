@@ -3,7 +3,17 @@ const pokeApi = {}
 
 function convertPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon()
-    pokemon.number = pokeDetail.id
+
+    pokemon.id = pokeDetail.id
+
+    // formatação dos números dos pokemons para o estilo #000
+    let numberString = pokeDetail.id.toString()
+    while (numberString.length < 3) {
+        numberString = "0" + numberString
+    }
+
+    // atribuindo pokemon.number ao número formatado
+    pokemon.number = numberString
     pokemon.name = pokeDetail.name
 
     const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name)

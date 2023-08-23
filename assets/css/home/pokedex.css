@@ -94,13 +94,19 @@
 }
 
 .pagination button {
-    background-color: #6f38f6;
+    background-color: #141414;
     border: none;
     border-radius: 1rem;
     color: #fff;
     font-size: 1rem;
     padding: .5rem 1rem;
     margin: .25rem 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    transform: translateY(-2px);
 }
 
 .hide {
