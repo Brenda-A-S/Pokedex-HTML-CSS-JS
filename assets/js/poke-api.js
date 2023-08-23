@@ -22,13 +22,15 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.types = types
     pokemon.type = type
 
-    const stats = pokeDetail.stats.map((statSlot) => statSlot.stat.name)
+    // mapeando todo o arry stats, para poder pegar as infos que quiser do slot do stat
+    const stats = pokeDetail.stats.map((statSlot) => statSlot)
+    
     const [stat] = stats
 
     pokemon.stats = stats
     pokemon.stat = stat
 
-    pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
+    pokemon.photo = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokeDetail.id}.png`
     return pokemon
 }
 

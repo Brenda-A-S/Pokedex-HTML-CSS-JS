@@ -1,0 +1,133 @@
+.pokemonDetail {
+    margin-bottom: 30px;
+}
+
+.pokemon-infos {
+    width: 100%;
+    place-content: end;
+}
+
+.pokemon-img {
+    max-width: 300px;
+    height: 200px;
+}
+
+.pokemon-img img {
+    width: 100%;
+    height: auto;
+    object-position: left;
+}
+
+.pokemon-conteudo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 1;
+    margin-bottom: 4px;
+}
+
+.pokemon-conteudo h1 {
+    font-size: 3rem;
+    text-align: right;
+    z-index: 2;
+    text-transform: capitalize;
+}
+
+.pokemon-conteudo span {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-weight: 700;
+    font-size: 5rem;
+    opacity: .1;
+}
+
+.pokemon-conteudo ol {
+    display: flex;
+    gap: 8px;
+    z-index: 1;
+}
+
+.pokemon-conteudo ol li {
+    display: flex;
+    gap: 8px;
+    padding: .25rem 1rem;
+    border-radius: 1rem;
+}
+
+.pokemon-detail {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.pokemon-detail div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+}
+
+.pokemon-detail div span {
+    white-space: nowrap;
+    font-weight: 500;
+    text-align: end;
+    width: 3ch;
+}
+
+.pokemon-detail div h3 {
+    text-align: left;
+    flex: 1;
+    font-weight: 600;
+}
+
+.pokemon-detail h2 {
+    margin-bottom: 20px;
+}
+
+.pokemon-detail progress[value]::-webkit-progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 130px;
+    position: relative;
+}
+
+.pokemon-detail progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pokemon-detail progress[value]::-webkit-progress-value {
+    border: 3px solid #f0f0f0;
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+    .pokemon-detail {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pokemonDetail {
+        padding: 0;
+    }
+
+    .pokemon-infos {
+        padding: 20px;
+    }
+
+    .pokemon-detail {
+        padding: 20px;
+    }
+
+    .pokemon-detail progress[value]::-webkit-progress-bar {
+        width: 130px;
+    }
+}

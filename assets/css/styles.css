@@ -3,3 +3,5 @@
 @import url(./global/footer.css);
 @import url(./global/pokemoncolors.css);
 @import url(./home/pokedex.css);
+@import url(./detalhes/pokemonDetail.css);
+@import url(./detalhes/statscolors.css);

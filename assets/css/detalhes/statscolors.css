@@ -1,0 +1,23 @@
+.hp progress[value]::-webkit-progress-value{
+    background-color: rgb(38, 190, 96);
+}
+
+.attack  progress[value]::-webkit-progress-value{
+    background-color: rgb(190, 38, 38);
+}
+
+.defense  progress[value]::-webkit-progress-value{
+    background-color: rgb(151, 151, 151);
+}
+
+.special-attack  progress[value]::-webkit-progress-value{
+    background-color: rgb(122, 38, 190);
+}
+
+.special-defense  progress[value]::-webkit-progress-value{
+    background-color: rgb(38, 129, 190);
+}
+
+.speed  progress[value]::-webkit-progress-value{
+    background-color: rgb(190, 180, 38);
+}

@@ -11,7 +11,7 @@ const splitURL = pagURL.split("=")
 let id = 0
 
 // caso tenha ocorrido o split e ele seja maior que 1 ocorre um pop no id, caso não tenha o valor default será 1
-if(splitURL.length > 1){
+if (splitURL.length > 1) {
     id = splitURL.pop()
 } else {
     id = 1
@@ -23,26 +23,43 @@ console.log(url)
 
 // função para pegar os detalhes do pokemon e retornar no HTML
 function toLoadPokemon(url) {
-    pokeApi.getPokemonDetail(url).then((pokemon = []) => {     
-        const newHtml = 
-            `<li>
-            <span class="number">#${pokemon.number}</span>
-            <span class="name">${pokemon.name}</span>
-            <div class="detail">
-                <ol class="types">
-                        ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-                </ol>
-                <ol class="stats">
-                        ${pokemon.stats.map((stat) => `<li class="">${stat}</li>`).join('')}
-                </ol>
-            <img src="${pokemon.photo}"
-                alt="${pokemon.name}"> 
+    pokeApi.getPokemonDetail(url).then((pokemon = []) => {
+        const newHtml =
+            `<div class="pokemonDetail container">
+                <div class="pokemon-infos">
+                    <div class="pokemon-img">
+                        <img src="${pokemon.photo}" alt="${pokemon.name}"> 
+                    </div>
+                    <div class="pokemon-conteudo">
+                        <span class="number" aria-label="número do Pokemon">#${pokemon.number}</span>
+                        <h1 class="name">${pokemon.name}</h1>
+
+                        <ol class="types" aria-label="Lista de tipos do Pokemon">
+                                ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                        </ol>
+                    </div>
+                </div>
+                <div class="pokemon-detail">
+                        <h2>Estatísticas</h2>
+                        <section class="stats">
+                            ${pokemon.stats.map((stat) => `
+                            <div class="${stat.stat.name}">
+                                <h3>
+                                    ${stat.stat.name}
+                                </h3> 
+                                <div class="progress">
+                                    <progress value="${stat.base_stat}" max="100"></progress>
+                                    <span>${stat.base_stat}%</span>
+                                </div>
+                                    
+                            </div>`).join('')}
+                        </section>
             </div>
-        </li> 
+        </div> 
         `
         loadPokemon.innerHTML += newHtml
     })
-} 
+}
 
 // evento de load adicionado a tela para ao carregar chamar a função acima
 window.addEventListener('load', () => {
