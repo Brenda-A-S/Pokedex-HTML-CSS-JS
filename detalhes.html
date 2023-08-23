@@ -21,22 +21,27 @@
 </head>
 
 <body>
-    <section class="content">
-        <div class="logo"><img src="assets/imgs/pokemon-logo.png" alt=""></div>
 
-        <ol id="pokemonList" class="pokemons">
-        </ol>
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load more
-            </button>
-        </div>
-    </section>
+    <header class="logo">
+        <img src="assets/imgs/pokemon-logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="details.html">Pokemons</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script src="assets/js/loadPokemon.js"></script>
+    <main class="content">
+        <section id="loadPokemon" aria-label="Pokemon"></section>
+    </main>
+
+    <footer>
+    </footer>
+
     <script src="assets/js/pokemon-model.js"></script>
     <script src="assets/js/poke-api.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/loadPokemon.js"></script>
 </body>
 
 </html>

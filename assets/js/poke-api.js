@@ -1,7 +1,7 @@
 
 const pokeApi = {}
 
-function convertPokeApiDetailToPokemon(pokeDetail){
+function convertPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon()
     pokemon.number = pokeDetail.id
     pokemon.name = pokeDetail.name
@@ -12,12 +12,25 @@ function convertPokeApiDetailToPokemon(pokeDetail){
     pokemon.types = types
     pokemon.type = type
 
+    const stats = pokeDetail.stats.map((statSlot) => statSlot.stat.name)
+    const [stat] = stats
+
+    pokemon.stats = stats
+    pokemon.stat = stat
+
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
     return pokemon
 }
 
-pokeApi.getPokemonDetail = (pokemon)=>{
-    return fetch(pokemon.url)
+// aqui fiz ele receber tanto a url do pokemon das listas quanto somente a url capturada pela página de detalhes
+pokeApi.getPokemonDetail = (pokemon) => {
+    return fetch(pokemon.url || url)
+        .then((response) => response.json())
+        .then(convertPokeApiDetailToPokemon)
+}
+
+pokeApi.getPokemonDetails = (pokemon) => {
+    return fetch(pokemon)
         .then((response) => response.json())
         .then(convertPokeApiDetailToPokemon)
 }
