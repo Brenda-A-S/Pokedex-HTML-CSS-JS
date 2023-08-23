@@ -48,8 +48,8 @@ function toLoadPokemon(url) {
                                     ${stat.stat.name}
                                 </h3> 
                                 <div class="progress">
+                                <span>${stat.base_stat}%</span>
                                     <progress value="${stat.base_stat}" max="100"></progress>
-                                    <span>${stat.base_stat}%</span>
                                 </div>
                                     
                             </div>`).join('')}
