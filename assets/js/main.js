@@ -17,7 +17,7 @@ function loadPokemonitens(offset, limit) {
                         <ol class="types">
                             ${pokemon.types.map((type) => `<li class="type slideInLeft ${type}">${type}</li>`).join('')}
                         </ol>
-                    <img src="${pokemon.photo}" alt="${pokemon.name}" width="162" height="150" class="slideInRight"> 
+                    <img src="${pokemon.photo}" alt="${pokemon.name}" width="156" height="144" class="slideInRight"> 
                     </div>
                 </a>
             </li> 
