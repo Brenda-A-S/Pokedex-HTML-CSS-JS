@@ -1,6 +1,7 @@
 .pokemonDetail {
     margin-bottom: 30px;
     overflow: hidden;
+    background: url(../../imgs/header/pokeball-gray.svg) no-repeat top left / contain;
 }
 
 .pokemon-infos {
