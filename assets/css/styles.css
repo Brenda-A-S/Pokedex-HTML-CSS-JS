@@ -4,5 +4,7 @@
 @import url(./global/animations.css);
 @import url(./global/pokemoncolors.css);
 @import url(./home/pokedex.css);
-@import url(./detalhes/pokemonDetail.css);
+@import url(./detalhes/pokemon-individual.css);
+@import url(./detalhes/pokemon-infos.css);
+@import url(./detalhes/pokemon-detail.css);
 @import url(./detalhes/statscolors.css);

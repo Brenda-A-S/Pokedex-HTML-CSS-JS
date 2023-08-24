@@ -25,7 +25,7 @@ console.log(url)
 function toLoadPokemon(url) {
     pokeApi.getPokemonDetail(url).then((pokemon = []) => {
         const newHtml =
-            `<div class="pokemonDetail container">
+            `<div class="pokemon-individual container">
                 <div class="pokemon-infos">
                     <div class="pokemon-img slideInLeft">
                         <img src="${pokemon.photo}" width="300" height="300" alt="${pokemon.name}"> 

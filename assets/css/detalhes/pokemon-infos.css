@@ -1,0 +1,38 @@
+.pokemon-conteudo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 1;
+    margin-bottom: 12px;
+}
+
+.pokemon-conteudo h1 {
+    font-size: 3rem;
+    text-align: right;
+    z-index: 2;
+    text-transform: capitalize;
+}
+
+.pokemon-conteudo span {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-weight: 700;
+    font-size: 5rem;
+    opacity: .1;
+}
+
+.pokemon-conteudo ol {
+    display: flex;
+    gap: 8px;
+    z-index: 1;
+}
+
+.pokemon-conteudo ol li {
+    display: flex;
+    gap: 8px;
+    padding: .25rem 1rem;
+    border-radius: 1rem;
+}

@@ -1,0 +1,27 @@
+.pokemon-individual {
+    margin-bottom: 30px;
+    overflow: hidden;
+    background: url(../../imgs/header/pokeball-gray.svg) no-repeat top left / contain;
+}
+
+.pokemon-infos {
+    width: 100%;
+    place-content: end;
+}
+
+.pokemon-img {
+    max-width: 300px;
+    height: 200px;
+}
+
+.pokemon-img img {
+    width: 100%;
+    height: auto;
+    object-position: left;
+}
+
+@media (max-width: 600px) {    
+    .pokemon-infos {
+        padding: 10px;
+    }
+}
