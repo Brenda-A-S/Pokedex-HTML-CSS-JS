@@ -23,16 +23,21 @@ Foram utilizados os seguintes recursos:
 * Página com detalhamento individual do Pokemon
 * Formatação do número no modelo #000
 * Estilização diferente da sugerida no curso
-* Adição de Links úteis
 * Adição de header com menu nav e footer fixo
 * Animações e estilos ao :hover
 * Alteração na paleta de cores dos tipos de Pokemon
 
  # :open_file_folder: O resultado
- :star: :star: :star:
- ![127 0 0 1_5500_index html](https://user-images.githubusercontent.com/69852246/230819940-bf0242c4-3b89-4666-8aad-764ea355b43a.png)
+
+ ![Imagem do WhatsApp de 2023-08-24 à(s) 19 14 42](https://github.com/Brenda-A-S/Pokedex-HTML-CSS-JS/assets/69852246/c435c1f4-f27c-4e60-ae8a-a95c8fac443e)
+
+![Imagem do WhatsApp de 2023-08-24 à(s) 19 14 50](https://github.com/Brenda-A-S/Pokedex-HTML-CSS-JS/assets/69852246/bce9e26b-bdd8-47e8-be89-7323da619a12)
+
+https://github.com/Brenda-A-S/Pokedex-HTML-CSS-JS/assets/69852246/b856f29a-4f6f-4f09-9226-f25684599781
  
  # :link: Links úteis
-* [Plataforma da DIO](https://www.dio.me/)
-* [Formação JavaScript Developer](https://web.dio.me/track/formacao-javascript-developer)
-* [Meu LinkedIn](https://www.linkedin.com/in/brenda-antunes-silva/)
+* Comece o curso Formação JavaScript Developer [com DIO Pro](https://dio.me/curso-javascript/AFXQ1Y3OR88A)
+* Me siga no [Instagram](https://www.instagram.com/brenda_a_s_dev/)
+* Se conecte comigo no [LinkedIn](https://www.linkedin.com/in/brenda-antunes-silva/)
+* Veja meu [Portfólio](https://portfolio-brenda-a-s.web.app/)
+* Meu [LinkTree](https://linktr.ee/brenda_a_s_dev)
