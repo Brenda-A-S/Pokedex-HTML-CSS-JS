@@ -9,16 +9,6 @@ Foram utilizadas linguagens que são as tecnologias fundamentais para a constru�
 * `CSS` - Linguagem de estilização para criar a aparência visual de uma página da Web, controlar o estilo, o layout, a tipografia, entre outros elementos de uma página, permitindo que as páginas sejam apresentadas de maneira mais atraente e coerente, além de disponibilizar recursos que tornam a página responsiva.
 * `JavaScript` - Linguagem de programação de alto nível, para criar interatividade e dinamismo em páginas da web, bem como para desenvolver aplicativos web do lado do cliente, manipular dados e fazer integração com outras tecnologias.
 
-# :wrench: Temas Abordados
-
-Foram utilizados os seguintes recursos:
-* `HTTP` - Para fazer requisições HTTP.
-* `FETCH API` - Para fazer requisição de consumo de API.
-* `map()` - Para criar lista com elementos mapeados.
-* `join()` - Para concatenar elementos da lista e retornar uma nova string.
-* `normalize CSS` - Para padronizar a visualização do estilo em diferentes navegadores.
-* `mobile firts` - Desenvolvimento primeiramente para dispositivos móveis e depois adaptados para Desktop.
-
 # Funcionalidades adicionadas por mim
 * Página com detalhamento individual do Pokemon
 * Formatação do número no modelo #000
