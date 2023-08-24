@@ -27,21 +27,21 @@ function toLoadPokemon(url) {
         const newHtml =
             `<div class="pokemonDetail container">
                 <div class="pokemon-infos">
-                    <div class="pokemon-img">
+                    <div class="pokemon-img slideInLeft">
                         <img src="${pokemon.photo}" alt="${pokemon.name}"> 
                     </div>
                     <div class="pokemon-conteudo">
-                        <span class="number" aria-label="número do Pokemon">#${pokemon.number}</span>
-                        <h1 class="name">${pokemon.name}</h1>
+                        <span class="number slideInDown" aria-label="número do Pokemon">#${pokemon.number}</span>
+                        <h1 class="name slideInRight">${pokemon.name}</h1>
 
-                        <ol class="types" aria-label="Lista de tipos do Pokemon">
+                        <ol class="types fadeIn" aria-label="Lista de tipos do Pokemon">
                                 ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                         </ol>
                     </div>
                 </div>
-                <div class="pokemon-detail">
+                <div class="pokemon-detail fadeIn">
                         <h2>Estatísticas</h2>
-                        <section class="stats">
+                        <div class="stats">
                             ${pokemon.stats.map((stat) => `
                             <div class="stat ${stat.stat.name}">
                                 <h3>
@@ -53,7 +53,7 @@ function toLoadPokemon(url) {
                                 </div>
                                     
                             </div>`).join('')}
-                        </section>
+                        </div>
             </div>
         </div> 
         `

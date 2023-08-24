@@ -20,13 +20,13 @@
 </head>
 
 <body>
-    <header class="header-bg">
+    <header class="header-bg fadeIn" aria-label="Cabeçalho">
         <div class="header container">
             <a href="index.html" class="logo">
                 <img src="assets/imgs/header/pokeball.svg" width="32" height="32" alt="Logo Pokeball">
             </a>
 
-            <nav>
+            <nav aria-label="Primária">
                 <ul class="header-menu">
                     <li><a href="index.html">Início
                         </a>
@@ -40,19 +40,19 @@
         </div>
     </header>
 
-    <main class="content">
-
+    <main class="content">        
+        <h1 class="titulo">Lista de Pokemons</h1>
         <ol id="pokemonList" class="pokemons">
         </ol>
 
-        <div class="pagination">
+        <div class="pagination fadeIn">
             <button id="loadMoreButton" type="button">
-                Load more
+                Carregar mais
             </button>
         </div>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer container fadeIn" aria-label="Rodapé">
         <h3>Criado por <a href="https://www.instagram.com/brenda_a_s_dev/" target="_blank">@brenda-a-s-dev</a>.</h3>
     </footer>
 

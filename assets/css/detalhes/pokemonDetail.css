@@ -1,5 +1,6 @@
 .pokemonDetail {
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .pokemon-infos {

@@ -7,6 +7,11 @@
     position: relative;
 }
 
+.titulo {
+    height: 0;
+    overflow: hidden;
+}
+
 .pokemon {
     margin: .5rem;
     padding: 1rem;
@@ -21,7 +26,7 @@
 
 .pokemon::before {
     content: '';
-    background: url(../../imgs/header/pokeball.svg) no-repeat bottom right / 232px 232px;
+    background: url(../../imgs/header/pokeball.svg) no-repeat bottom 25px right / 232px 232px;
     position: absolute;
     bottom: -120px;
     left: 140px;
@@ -30,7 +35,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     filter: grayscale(1);
-    opacity:.1;
+    opacity:.025;
 }
 
 .pokemon:hover {
