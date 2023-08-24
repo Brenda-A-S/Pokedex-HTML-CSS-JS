@@ -28,7 +28,7 @@ function toLoadPokemon(url) {
             `<div class="pokemonDetail container">
                 <div class="pokemon-infos">
                     <div class="pokemon-img slideInLeft">
-                        <img src="${pokemon.photo}" alt="${pokemon.name}"> 
+                        <img src="${pokemon.photo}" width="300" height="300" alt="${pokemon.name}"> 
                     </div>
                     <div class="pokemon-conteudo">
                         <span class="number slideInDown" aria-label="número do Pokemon">#${pokemon.number}</span>
