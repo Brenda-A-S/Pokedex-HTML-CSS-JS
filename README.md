@@ -2,14 +2,7 @@
 
 Projeto de uma Pokedex, utilizando de recursos da API [`pokeapi.co`](https://pokeapi.co/) com requisições feitas através de `fetch API`. Esse projeto foi desenvolvido e evoluído por mim, durante a Formação JavaScript Developer da DIO.
 
-# 📌 Linguagens Utilizadas
-
-Foram utilizadas linguagens que são as tecnologias fundamentais para a construção de páginas da Web modernas e responsivas, permitindo que desenvolvedores criem interfaces atraentes, dinâmicas e funcionais para usuários em uma ampla variedade de dispositivos e plataformas. São elas:
-* `HTML` - Linguagem de marcação para definir a estrutura básica de uma página da Web, incluindo títulos, parágrafos, links, imagens e outros elementos visuais e interativos.
-* `CSS` - Linguagem de estilização para criar a aparência visual de uma página da Web, controlar o estilo, o layout, a tipografia, entre outros elementos de uma página, permitindo que as páginas sejam apresentadas de maneira mais atraente e coerente, além de disponibilizar recursos que tornam a página responsiva.
-* `JavaScript` - Linguagem de programação de alto nível, para criar interatividade e dinamismo em páginas da web, bem como para desenvolver aplicativos web do lado do cliente, manipular dados e fazer integração com outras tecnologias.
-
-# Funcionalidades adicionadas por mim
+# Alterações feitas por mim
 * Página com detalhamento individual do Pokemon
 * Formatação do número no modelo #000
 * Estilização diferente da sugerida no curso
@@ -26,7 +19,7 @@ Foram utilizadas linguagens que são as tecnologias fundamentais para a constru�
 https://github.com/Brenda-A-S/Pokedex-HTML-CSS-JS/assets/69852246/b856f29a-4f6f-4f09-9226-f25684599781
  
  # :link: Links úteis
-* Comece o curso Formação JavaScript Developer [com DIO Pro](https://dio.me/curso-javascript/AFXQ1Y3OR88A)
+* Comece o curso Formação JavaScript Developer com [DIO Pro](https://dio.me/curso-javascript/AFXQ1Y3OR88A)
 * Me siga no [Instagram](https://www.instagram.com/brenda_a_s_dev/)
 * Se conecte comigo no [LinkedIn](https://www.linkedin.com/in/brenda-antunes-silva/)
 * Veja meu [Portfólio](https://portfolio-brenda-a-s.web.app/)
