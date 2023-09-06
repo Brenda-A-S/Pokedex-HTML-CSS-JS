@@ -41,9 +41,9 @@ function toLoadPokemon(url) {
                 </div>
                 <div class="pokemon-detail fadeIn">
                         <h2>Estatísticas</h2>
-                        <div class="stats">
+                        <ul class="stats">
                             ${pokemon.stats.map((stat) => `
-                            <div class="stat ${stat.stat.name}">
+                            <li class="stat ${stat.stat.name}">
                                 <h3>
                                     ${stat.stat.name}
                                 </h3> 
@@ -52,8 +52,8 @@ function toLoadPokemon(url) {
                                     <progress value="${stat.base_stat}" max="100"></progress>
                                 </div>
                                     
-                            </div>`).join('')}
-                        </div>
+                            </li>`).join('')}
+                        </ul>
             </div>
         </div> 
         `

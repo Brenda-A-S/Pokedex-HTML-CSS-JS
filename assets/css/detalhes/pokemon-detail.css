@@ -10,11 +10,11 @@
 
 .pokemon-detail .stat {
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: max-content max-content;
     justify-content: space-between;
     gap: 12px;
     border-radius: 10px;
-    padding-left: 8px;
+    padding: 8px;
 }
 
 .pokemon-detail .stat:hover {
@@ -29,13 +29,13 @@
 
 .pokemon-detail .progress {
     display: grid;
-    grid-template-columns: 5ch 160px;
+    grid-template-columns: 5ch minmax(110px, 1fr);
     justify-content: end;
     align-items: center;
 }
 
 .pokemon-detail .progress progress {
-    width: 130px;
+    width: 110px;
 }
 
 .pokemon-detail .progress span {
@@ -51,15 +51,15 @@
     position: relative;
 }
 
+.pokemon-detail progress[value]::-webkit-progress-value {
+    border: 3px solid #f0f0f0;
+    border-radius: 20px;
+}
+
 .pokemon-detail progress span {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.pokemon-detail progress[value]::-webkit-progress-value {
-    border: 3px solid #f0f0f0;
-    border-radius: 20px;
 }
 
 
@@ -69,18 +69,23 @@
     }
 }
 
-@media (max-width: 400px) {
-    .pokemon-detail .stat {
-        grid-template-columns: 8ch 1fr;
-    }
-}
-
 @media (max-width: 600px) {
     .pokemonDetail {
         padding: 0px;
     }
-    
+}
+
+@media (max-width: 400px) {
+    .pokemon-detail .stat {
+        grid-template-columns: 8ch 1fr;
+    }
     .pokemon-detail progress[value]::-webkit-progress-bar {
         width: 130px;
+    }
+}
+
+@media (max-width: 350px) {    
+    .pokemon-detail progress[value]::-webkit-progress-bar {
+        width: 90px;
     }
 }

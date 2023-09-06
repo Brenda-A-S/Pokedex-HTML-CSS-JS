@@ -50,6 +50,17 @@
     object-position: left;
 }
 
+#search {
+    padding: 10px 25px;
+    border-radius: 20px;
+    outline: 0px;
+    border: 1px solid transparent;
+}
+
+#search:focus {
+    border-color: #e9e9e9;
+}
+
 @media (max-width: 600px) {
     .header-menu {
         gap: 12px;
