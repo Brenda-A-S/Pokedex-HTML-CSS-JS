@@ -36,10 +36,11 @@ function loadPokemonitens(offset, limit) {
                 const pokeName = pokemon.name.toString();
                 let adicionouPoke = false;
                 let str = ''
+                let inputValue = input.value.toLowerCase()
 
                 for (let i = 0; i < pokeName.length; i++) {
                     str += pokeName[i]
-                    if (input.value.includes(pokeName[i]) && input.value === str) {
+                    if (inputValue.includes(pokeName[i]) && inputValue === str) {
                         console.log(str)
                         adicionouPoke = true;
                     }
