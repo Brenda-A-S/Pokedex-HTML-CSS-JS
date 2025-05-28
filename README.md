@@ -1,15 +1,25 @@
-# 📁 Projeto Pokedex Desafio DIO
+🧢 Pokédex — Projeto com HTML, CSS e JavaScript
+Esse foi um projeto que desenvolvi para praticar consumo de APIs, junto com HTML, CSS e JavaScript puro. A ideia era criar uma Pokédex interativa, que puxasse informações dos Pokémons direto da PokéAPI, exibindo nome, número, tipo, imagem e outros dados.
 
-Projeto de uma Pokedex, utilizando de recursos da API [`pokeapi.co`](https://pokeapi.co/) com requisições feitas através de `fetch API`. Esse projeto foi desenvolvido e evoluído por mim, durante a Formação JavaScript Developer da DIO.
+O projeto tem uma interface simples e responsiva, onde o usuário pode:
 
-# Alterações feitas por mim
-* Página com detalhamento individual do Pokemon
-* Formatação do número no modelo #000
-* Estilização diferente da sugerida no curso
-* Adição de header com menu nav e footer fixo
-* Animações e estilos ao :hover
-* Alteração na paleta de cores dos tipos de Pokemon
+* Pesquisar por nome do Pokémon
 
+* Ver informações detalhadas como tipos e stats e imagens
+
+* Navegar facilmente entre diferentes Pokémons
+
+Fiz esse projeto para treinar:
+
+* Consumo de APIs com fetch
+
+* Manipulação de DOM e eventos
+
+* Organização de código JavaScript
+
+* Estilização responsiva com CSS
+
+Foi muito divertido unir código com nostalgia de infância 😄✨. Se você também curte Pokémon, dá uma olhada!
  # :open_file_folder: O resultado
 
  ![Imagem do WhatsApp de 2023-08-24 à(s) 19 14 42](https://github.com/Brenda-A-S/Pokedex-HTML-CSS-JS/assets/69852246/c435c1f4-f27c-4e60-ae8a-a95c8fac443e)
